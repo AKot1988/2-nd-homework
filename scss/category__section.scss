@@ -1,0 +1,150 @@
+@import './mixin.scss';
+@import './fonts.scss';
+@import './common.scss';
+
+.offer__wrapper {
+  position: relative;
+  @include flex (center, center);
+  flex-direction: column;
+  margin: 225px 150px 0px 150px;
+}
+
+.category__cards {
+  width: 100%;
+  // margin: 0px 150px 0px 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  grid-template-rows: 230px, auto;
+  column-gap: 80px;
+  justify-content: center;
+
+  &__item {
+    @include flex (center, center);
+    flex-direction: column;
+
+    position: relative;
+    width: 200px;
+    height: 230px;
+    border-radius: 36px;
+    background-color: white;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      scale: 1.2;
+      box-shadow: 0px 10px 10px -6px rgb(139, 139, 139);
+      // background-color: white;
+      z-index: 1;
+    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: -33px;
+    //   top: 170px;
+    //   width: 100px;
+    //   min-height: 100px;
+    //   z-index: -1;
+    //   border-radius: 30px 0px 10px 0px;
+    //   background-color: white;
+    //   transition: all 0.2s ease-in-out;
+    
+    //   &:hover {
+    //     background-color: $orange-text-color;
+    //     z-index: -1;
+    //   }
+    // }
+  }
+}
+
+.category__cards__background__decore {
+  position: absolute;
+  left: -33px;
+  top: 170px;
+  width: 100px;
+  min-height: 100px;
+  z-index: -1;
+  border-radius: 30px 0px 10px 0px;
+  background-color: $orange-text-color;
+  opacity: 0;
+  transition: all ease 0.8s;
+
+  &:hover {
+    z-index: -1;
+    background-color: $orange-text-color;
+    opacity: 1;
+  }
+}
+
+
+.category__cards__item__logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 10px auto;
+}
+
+.category {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: $description-text-color;
+
+  &__offer {
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+    color: $heading-text-color;
+    margin-bottom: 110px;
+  }
+}
+
+.decore__category__section {
+  position: absolute;
+  top: -180px;
+  left: 180px;
+}
+
+// .category__cards__background__decore {
+//   position: absolute;
+//   left: 50px;
+//   top: -100px;
+//   width: 100px;
+//   min-height: 100px;
+//   z-index: -1;
+//   border-radius: 30px 0px 10px 0px;
+//   background-color: $orange-text-color;
+// }
+
+.service__name {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-stretch: 100%;
+  font-size: 20px;
+  color: $servise-card-main-color;
+  margin-bottom: 15px;
+}
+
+.service__description {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-stretch: 100%;
+  font-size: 16px;
+  line-height: 26px;
+  color: $description-text-color;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+  .category__cards {
+    width: 100%;
+    // margin: 0px 150px 0px 150px;
+    grid-template-columns: 180px;
+    grid-template-rows: 280px;
+    column-gap: 120px;
+    justify-content: center;
+  }
+}

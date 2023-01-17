@@ -1,0 +1,49 @@
+
+// --------------------------colors-------------------------------
+
+
+$heading-text-color:#181E4B;
+$second-heading-text-color: #14183E;
+$orange-text-color:#DF6951;
+$nav-item-text-color:#212832;
+$description-text-color:#5E6282;
+$play-demo-text-color:#686D77;
+$heading-cards-text-color:#1E1D4C;
+$hero-button-color: #F1A501;
+$black-text-color: #080809;
+$subscribe-background: #DFD7F9;
+$subscribe-text-color: #5E6282;
+$servise-card-main-color: #1E1D4C;
+
+.main__container {
+    max-width: 1440px;
+    height: 4774px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    // border: 5px dotted rgb(255, 0, 0);
+}
+
+.orange__spot__decore {
+    // background-image: url(../img/Decore.svg);
+    position: absolute;
+    left: 562px;
+    top: -190px;
+    z-index: -2;
+    overflow-x: hidden;
+}
+
+.ellipse__decore {
+    // background-image: url(../img/Ellipse\ 8.svg);
+    position: absolute;
+    width: 478.94px;
+    height: 496.86px;
+    left: -300px;
+    top: -60px;
+    z-index: -1;
+
+}
+

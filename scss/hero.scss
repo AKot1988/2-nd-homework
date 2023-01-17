@@ -1,0 +1,149 @@
+// -------------hero-----------------------
+@import './fonts.scss';
+@import './mixin.scss';
+@import './common.scss';
+
+.hero__wrapper {
+    margin: 150px 150px 0px 150px;
+}
+
+.hero__section {
+    @include flex (center, start);
+
+    &__section__descriptions {
+        margin-left: 150px;
+        width: 550px;
+    }
+
+    &__destination__promo {
+        margin-bottom: 25px;
+        max-width: 550px;
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 20px;
+        color: $orange-text-color;
+        text-transform: uppercase;
+    }
+
+    &__company__slogan {
+        margin-bottom: 30px;
+        max-width: 665px;
+        font-family: 'Volkhov';
+        font-weight: 700;
+        font-size: 84px;
+        color: $heading-text-color;
+    }
+
+    &__destination__description {
+        margin-bottom: 35px;
+        max-width: 470px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $description-text-color;
+    }
+
+
+}
+
+.hero__section__btn {
+    @include flex (center, start);
+    min-width: 380px;
+    height: 60px;
+
+    &__find__more {
+        // box-sizing: border-box;
+        display: inline-block;
+        @include flex (center, center);
+        margin-right: 45px;
+        width: 170px;
+        height: 60px;
+        background-color: $hero-button-color;
+        border-radius: 10px;
+
+        font-family: 'Open Sans';
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+    }
+    &__play__demo {
+        @include flex (center, start);
+        position: relative;
+    
+        &__logo {
+            position: relative;
+            top: 15px;
+            left: -10px;
+        }
+
+    }
+
+    &__play__link {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 17px;
+        text-decoration: none;
+        color: $play-demo-text-color;
+    }
+
+}
+
+// .hero__section__btn__play__demo {
+//     @include flex (center, start);
+// }
+
+.hero__section__traveller__image {
+    position: absolute;
+    top: 110px;
+    left: 505px;
+    z-index: 1;
+}
+
+
+@keyframes circletrack {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.first__plane {
+    position: absolute;
+    top: 160px;
+    left: 640px;
+    z-index: 3;
+}
+
+.first__plane:active {
+    position: absolute;
+    transform-origin: -150px -150px;    
+    // transition: transform 3 ease;
+    animation: circletrack 4s ease-out;
+
+
+}
+
+.second__plane {
+    position: absolute;
+    top: 210px;
+    left: 1115px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .hero__wrapper {
+        margin: 150px 50px 0px 50px;
+    }
+
+    .hero__section__destination__promo {
+        text-align: center;
+    }
+
+    .hero__section__company__slogan {
+        text-align: center;
+    }
+  }
+

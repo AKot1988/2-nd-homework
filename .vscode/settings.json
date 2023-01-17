@@ -1,0 +1,41 @@
+{
+  "files.autoSave": "afterDelay",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.fontSize": 14,
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "githubPullRequests.pullBranch": "never",
+  "prettier.singleQuote": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "css.format.preserveNewLines": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "audioCues.terminalQuickFix": "on",
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "afterDelay",
+  "workbench.startupEditor": "none",
+  "liveSassCompile.settings.autoprefix": [
+    // буде робити вендерні префікси для браузерів які киристується більше 1% юзерів
+    ">1%",
+    // буде підтримувати останні 2 версії браузерів
+    "last 2 versions"
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css",
+      "savePathReplacementPairs": null
+    }
+    // {
+    //   "format": "compressed",
+    //   "extensionName": ".min.css",
+    //   "savePath": "/css",
+    //   "savePathReplacementPairs": null
+    // }
+  ],
+  "liveSassCompile.settings.generateMap": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}
